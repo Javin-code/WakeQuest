@@ -1,0 +1,6 @@
+{
+  "name": "WakeQuest",
+  "description": "WakeQuest – The Alarm You Must Solve. Interactive wake-up challenges including moving buttons, CAPTCHA, and math puzzles to ensure you are fully awake.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

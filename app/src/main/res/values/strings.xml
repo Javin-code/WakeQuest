@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WakeQuest</string>
+    <string name="alarm_service_channel_name">WakeQuest Active Alarms</string>
+    <string name="alarm_service_channel_desc">Active sounding alarms requiring challenges to dismiss</string>
+    <string name="alarm_notification_title">WakeQuest Alarm Active!</string>
+    <string name="alarm_notification_content">Wake up! Solve the challenge to dismiss the alarm.</string>
+</resources>
