@@ -1,22 +1,65 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# WakeQuest – The Alarm You Must Solve
 
-# Run and deploy your AI Studio app
+## Overview
 
-This contains everything you need to run your app locally.
+WakeQuest is an interactive Android alarm application designed to make waking up more engaging. Instead of dismissing an alarm immediately, users must successfully complete a selected challenge before the alarm stops.
 
-View your app in AI Studio: https://ai.studio/apps/fe6dce09-7ad2-4188-8723-0b2db95df980
+## Features
 
-## Run Locally
+- Create, edit and delete alarms.
+- Enable and disable individual alarms.
+- Persistent local alarm storage.
+- Full-screen alarm interface.
+- Continuous alarm sound and vibration.
+- Three interactive challenges:
+  - Moving Buttons
+  - CAPTCHA
+  - Mathematics
+- Adjustable challenge difficulty.
+- Repeat alarm scheduling.
+- Input validation and error handling.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+## Technology Stack
 
+- Kotlin
+- Jetpack Compose
+- Android SDK
+- Room Database
+- Android AlarmManager
+- BroadcastReceiver
+- Android audio and vibration APIs
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
-7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
+## Project Structure
+
+- `ui/` – Application screens and user interface.
+- `data/` – Database, entities and repository.
+- `alarm/` – Alarm scheduling and audio management.
+- `challenge/` – Challenge generation and logic.
+- `receiver/` – Alarm and device boot receivers.
+- `service/` – Background alarm service.
+
+## How to Run
+
+1. Clone this repository.
+2. Open the project in Android Studio.
+3. Allow Gradle to synchronise.
+4. Connect an Android device or start an emulator.
+5. Build and run the application.
+6. Grant the required Android permissions.
+
+## Testing
+
+The application should be tested for alarm creation, persistence, scheduling, audio playback, vibration, challenge validation and error handling.
+
+Actual test results and platform limitations should be documented separately.
+
+## Future Improvements
+
+- Additional challenge types.
+- Improved accessibility.
+- More alarm sound options.
+- Enhanced scheduling and reliability.
+
+## Repository
+
+https://github.com/Javin-code/WakeQuest
